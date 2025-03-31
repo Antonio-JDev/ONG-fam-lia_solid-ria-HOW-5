@@ -14,3 +14,5 @@
  - NycolasMatiasMV [Perfil do github]
  - Eldalier [Perfil do github]
  - wNINJAw [Perfil do github] 
+ - Samuka-0 [Perfil do github] 
+ - AmigoInocente [Perfil do github] 
