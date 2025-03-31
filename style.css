@@ -1,0 +1,186 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: poppins, sans-serif;
+}
+
+body {
+    background-color: #d1c6c6e3;
+    color: #000000;
+}
+
+a {
+    color: #000000;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+a:hover {
+    opacity: 0.7;
+}
+
+.logo {
+    background-color: #06a235;
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    border: #ffffffc2 2px solid;
+    letter-spacing: 2px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #5bd23753;
+    height: 10vh;
+}
+
+.nav-list {
+    list-style: none;
+    display: flex;
+}
+
+.nav-list li {
+    letter-spacing: 3px;
+    margin-left: 32px;
+}
+
+/* Estilos do container principal */
+.container {
+    text-align: center;
+    padding: 4rem 2rem;
+    background-color: #ffffff;
+}
+
+.container h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: #06a235; /* Cor verde do logo para títulos */
+}
+
+.container p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Estilos das seções (sobre, objetivos, motivação) */
+section {
+    padding: 3rem 2rem;
+    background-color: #ffffff;
+    border-bottom: 1px solid #eee;
+}
+
+section h2 {
+    color: #06a235; /* Cor verde do logo para títulos */
+    margin-bottom: 1.5rem;
+}
+
+section ul {
+    list-style: disc;
+    margin-left: 2rem;
+}
+
+/* Estilos da galeria de marmitas */
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff;
+    gap: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    margin: 2rem auto; /* Ajuste da margem */
+    border: 2px solid #000000;
+    transition: background-color 0.3s, box-shadow 0.3s, border-color 0.3s;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+}
+
+main h2 {
+    color: #06a235; /* Cor verde do logo para títulos */
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+.galeria {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+    margin-top: 2rem;
+}
+
+.galeria img {
+    max-width: 300px;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.motivacao {
+    text-align: center;
+    margin-top: 2rem;
+}
+
+/* Estilos do artigo (como ajudar) */
+article {
+    padding: 3rem 2rem;
+    background-color: #ffffff;
+}
+
+article h2 {
+    color: #06a235; /* Cor verde do logo para títulos */
+    margin-bottom: 1.5rem;
+}
+
+article ul {
+    list-style: disc;
+    margin-left: 2rem;
+}
+
+article strong {
+    color: #06a235; /* Cor verde do logo para títulos */
+}
+
+/* Estilos do rodapé */
+.footer {
+    text-align: center;
+    padding: 1rem 0;
+    background-color: #333;
+    color: #fff;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav-list {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .nav-list li {
+        margin: 0.5rem 0;
+    }
+
+    main {
+        width: 95%; /* Ajuste para telas menores */
+    }
+}
