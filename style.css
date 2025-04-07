@@ -1,3 +1,4 @@
+
 * {
     margin: 0;
     padding: 0;
@@ -5,7 +6,7 @@
 }
 
 body {
-    background-color: #d1c6c6e3;
+    background-color: #ffffffc2;
     color: #000000;
 }
 
@@ -17,18 +18,16 @@ a {
 
 a:hover {
     opacity: 0.7;
+    text-decoration: none;
 }
 
 .logo {
     background-color: #06a235;
-    color: #ffffff;
-    font-size: 18px;
-    font-weight: bold;
     text-transform: uppercase;
-    border: #ffffffc2 2px solid;
+    border: #ffffffc2 1px solid;
     letter-spacing: 2px;
-    width: 50px;
-    height: 50px;
+    width: 80px;
+    height: 80px;
     border-radius: 50%;
     display: flex;
     justify-content: center;
@@ -40,40 +39,99 @@ nav {
     justify-content: space-around;
     align-items: center;
     background-color: #5bd23753;
-    height: 10vh;
+    height: 15vh;
 }
 
 .nav-list {
     list-style: none;
     display: flex;
+    font-weight: 400;
 }
 
 .nav-list li {
+    background-color: #5bd23753;
     letter-spacing: 3px;
     margin-left: 32px;
+    padding: 8px 16px;
+    border-radius: 50px;
+    border: #eee 1px solid;
 }
 
-/* Estilos do container principal */
-.container {
-    text-align: center;
-    padding: 4rem 2rem;
-    background-color: #ffffff;
+.image-container {
+    background-image: url('./imagens/chef-cozinhando.jpg');
+    background-position: center;
+    height: 60vh;
+    width: 90%;
+    max-width: 1200px;
+    background-size: cover;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 2rem auto;
+    border: 2px solid #000000;
+    transition: background-color 0.3s, box-shadow 0.3s, border-color 0.3s;
+    position: relative; /* Torna o contêiner relativo */
 }
 
-.container h1 {
-    font-size: 2.5rem;
+.inicio h1 {
+    font-size: 2rem;
     margin-bottom: 1rem;
-    color: #06a235; /* Cor verde do logo para títulos */
+    padding: 1rem;
+    background-color: #eeeeeeb9;
+    width: 90%;
+    max-width: 600px;
+    margin: 0 auto 1rem;
+    color: #06a235;
+    font-weight: 700;
+    text-transform: uppercase;
+    position: absolute; /* Posiciona absolutamente */
+    top: 30%; /* Ajuste a posição vertical */
+    left: 50%;
+    transform: translateX(-50%); /* Centraliza horizontalmente */
+    z-index: 2; /* Garante que fique na frente */
 }
 
-.container p {
+.inicio p {
     font-size: 1.1rem;
     line-height: 1.6;
-    max-width: 800px;
-    margin: 0 auto;
+    max-width: 90%;
+    margin: 1rem auto;
+    background-color: #eeeeeeb9;
+    font-weight: 700;
+    position: absolute; /* Posiciona absolutamente */
+    top: 70%; /* Ajuste a posição vertical */
+    left: 50%;
+    transform: translateX(-50%); /* Centraliza horizontalmente */
+    z-index: 2; /* Garante que fique na frente */
 }
 
-/* Estilos das seções (sobre, objetivos, motivação) */
+.inicio {
+    text-align: center;
+    padding: 2rem;
+    background-color: transparent; /* Remove o fundo do .inicio */
+}
+
+.inicio h1 {
+    font-size: 2rem; /* Ajuste responsivo */
+    margin-bottom: 1rem;
+    padding: 1rem; /* Ajuste responsivo */
+    background-color: #eeeeeeb9;
+    width: 90%; /* Ajuste responsivo */
+    max-width: 600px; /* Limite de largura */
+    margin: 0 auto 1rem; /* Centralizar */
+    color: #06a235;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.inicio p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    max-width: 90%; /* Ajuste responsivo */
+    margin: 1rem auto; /* Centralizar */
+    background-color: #eeeeeeb9;
+    font-weight: 700;
+}
+
 section {
     padding: 3rem 2rem;
     background-color: #ffffff;
@@ -81,16 +139,25 @@ section {
 }
 
 section h2 {
-    color: #06a235; /* Cor verde do logo para títulos */
-    margin-bottom: 1.5rem;
+    color: #06a235;
+    margin-bottom: 1rem;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: underline;
+    font-weight: 700;
 }
 
 section ul {
     list-style: disc;
     margin-left: 2rem;
+    list-style-image: url('./imagens/icon.png');
+    padding: 10px 0 0 0;
 }
 
-/* Estilos da galeria de marmitas */
+section ul li {
+    left: 20%;
+}
+
 main {
     display: flex;
     flex-direction: column;
@@ -101,17 +168,16 @@ main {
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    width: 80%;
-    margin: 2rem auto; /* Ajuste da margem */
+    width: 90%; /* Ajuste responsivo */
+    max-width: 1200px; /* Limite de largura */
+    margin: 2rem auto;
     border: 2px solid #000000;
     transition: background-color 0.3s, box-shadow 0.3s, border-color 0.3s;
-    position: relative;
     overflow: hidden;
-    z-index: 1;
 }
 
 main h2 {
-    color: #06a235; /* Cor verde do logo para títulos */
+    color: #06a235;
     margin-bottom: 1.5rem;
     text-align: center;
 }
@@ -128,7 +194,7 @@ main h2 {
     max-width: 300px;
     height: auto;
     border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 1);
 }
 
 .motivacao {
@@ -136,14 +202,13 @@ main h2 {
     margin-top: 2rem;
 }
 
-/* Estilos do artigo (como ajudar) */
 article {
     padding: 3rem 2rem;
     background-color: #ffffff;
 }
 
 article h2 {
-    color: #06a235; /* Cor verde do logo para títulos */
+    color: #06a235;
     margin-bottom: 1.5rem;
 }
 
@@ -153,10 +218,9 @@ article ul {
 }
 
 article strong {
-    color: #06a235; /* Cor verde do logo para títulos */
+    color: #06a235;
 }
 
-/* Estilos do rodapé */
 .footer {
     text-align: center;
     padding: 1rem 0;
@@ -164,11 +228,32 @@ article strong {
     color: #fff;
 }
 
-/* Responsividade */
+.back {
+    background-color: #06a235;
+    color: #ffffff;
+    font: bold;
+    margin: 0 auto 30px auto;
+    width: 130px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 @media (max-width: 768px) {
+    a {
+        font-size: 0.9rem;
+    }
+
+    .logo {
+        width: 60px;
+        height: 60px;
+    }
+
     nav {
         flex-direction: column;
         align-items: center;
+        height: auto;
     }
 
     .nav-list {
@@ -180,7 +265,28 @@ article strong {
         margin: 0.5rem 0;
     }
 
+    .inicio {
+        padding: 1rem;
+    }
+
+    .inicio h1 {
+        font-size: 1.3rem; /* Reduz o tamanho da fonte */
+        width: 82%; /* Ajusta a largura */
+        top: 50%; /* Ajusta a posição vertical */
+        background-color: transparent; /* Remove o fundo do h1 */
+    }
+
+    .inicio p {
+        font-size: 0.9rem; /* Reduz o tamanho da fonte */
+        line-height: 1.4;
+        top: 70%; /* Ajusta a posição vertical */
+    }
+
+    .image-container {
+        height: 40vh;
+    }
+
     main {
-        width: 95%; /* Ajuste para telas menores */
+        width: 95%;
     }
 }
