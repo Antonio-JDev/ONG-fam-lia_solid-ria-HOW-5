@@ -16,12 +16,12 @@
 <body>
     <header>
         <nav>
-              <a class="logo" href="#"><img src="https://static.wixstatic.com/media/f6ca36_31cf741abfc745b9b1883d3eb2c6a4da~mv2.png/v1/fill/w_165,h_162,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/logo-Restaurante-Comunitario-BRANCA.png" alt="logo-Restaurante-Comunitario-BRANCA.png" width="165" height="162" srcset="https://static.wixstatic.com/media/f6ca36_31cf741abfc745b9b1883d3eb2c6a4da~mv2.png/v1/fill/w_165,h_162,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/logo-Restaurante-Comunitario-BRANCA.png 1x, https://static.wixstatic.com/media/f6ca36_31cf741abfc745b9b1883d3eb2c6a4da~mv2.png/v1/fill/w_330,h_324,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/logo-Restaurante-Comunitario-BRANCA.png 2x" fetchpriority="high" style="width: 50px; height: 50px;"></a>
+              <a class="logo" href="#" id="comeco"><img src="https://static.wixstatic.com/media/f6ca36_31cf741abfc745b9b1883d3eb2c6a4da~mv2.png/v1/fill/w_165,h_162,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/logo-Restaurante-Comunitario-BRANCA.png" alt="logo-Restaurante-Comunitario-BRANCA.png" width="165" height="162" srcset="https://static.wixstatic.com/media/f6ca36_31cf741abfc745b9b1883d3eb2c6a4da~mv2.png/v1/fill/w_165,h_162,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/logo-Restaurante-Comunitario-BRANCA.png 1x, https://static.wixstatic.com/media/f6ca36_31cf741abfc745b9b1883d3eb2c6a4da~mv2.png/v1/fill/w_330,h_324,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/logo-Restaurante-Comunitario-BRANCA.png 2x" fetchpriority="high" style="width: 50px; height: 50px;"></a>
               <ul class="nav-list">
                     <li><a href="#inicio">Início</a></li>
                     <li><a href="#sobre">Sobre</a></li>
                     <li><a href="#main-content">Serviços</a></li>
-                    <li><a href="#">Contato</a></li>
+                    <li><a href="#contato">Contato</a></li>
                 </ul>
             </nav>
         </header>
@@ -102,8 +102,17 @@
         </p>
     </article>
     <div>
-    <a href="#inicio" class="back">Voltar ao Início</a></div>
+    <a href="#comeco" class="back">Voltar ao Início</a>
+   </div>
+        <form action="" class="contact-form">
+            <div class="contact-inputs">
+                <input type="text" placeholder="Name" class="contact-input">
+                <input type="email" placeholder="email" class="contact-input">           
+            </div>
+            <textarea name="Texto" placeholder="Digite sua mensagem" id="contato" cols="50" rows="7" class="contact-text"></textarea>
 
+            <input type="submit" value="Enviar" class="contact-button">  
+        </form>
     <div class="footer">
         <p>&copy; 2025 Mevam Solidário - Restaurante comunitário . Todos os direitos reservados.</p>
        

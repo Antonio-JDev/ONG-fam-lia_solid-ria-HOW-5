@@ -5,7 +5,7 @@
 
 ### Acesse o site :  https://antonio-jdev.github.io/ONG-fam-lia_solid-ria-HOW-5/#objetivos
 
-[<img src="./gif-ong.gif" alt="gif da página do site.">]
+[<img src="./imagens/gif-mevam.gif" alt="gif da página do site.">]
 
 ## Disciplina Hands on Work-V do curso Análises e densenvolvimento de sistemas.
 ### Projeto elaborado pelos alunos :

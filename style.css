@@ -200,21 +200,29 @@ main h2 {
 .motivacao {
     text-align: center;
     margin-top: 2rem;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    
 }
 
 article {
     padding: 3rem 2rem;
     background-color: #ffffff;
+    margin:0 0 0 11rem;
 }
 
 article h2 {
     color: #06a235;
     margin-bottom: 1.5rem;
+    text-decoration: underline;
+    margin-left: 28%;
 }
 
 article ul {
     list-style: disc;
     margin-left: 2rem;
+    list-style-image: url('./imagens/icon.png');
+    padding: 10px 0 10px 20px;
 }
 
 article strong {
@@ -238,6 +246,57 @@ article strong {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+.contact-inputs {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 1rem;
+    margin-bottom: 1rem; /* Adicionado para espaçamento */
+}
+
+.contact-input {
+    width: 100%;
+    padding: 0.8rem;
+    outline: none;
+    border: 1.5px solid #06a235;
+    font-size: .938rem;
+    margin-bottom: 1rem; /* Reduzido para melhor espaçamento */
+    border-radius: .5rem;
+    box-sizing: border-box; /* Garante que o padding não aumente o tamanho total */
+}
+
+.contact-button {
+    background-color: #06a235;
+    color: #ffffff;
+    padding: 0.75rem 2.5rem;
+    border-radius: .5rem;
+    border: 2px solid #ffffff;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s; /* Adicionado para efeito hover */
+    margin-left: 50%;
+    transform: translateX(-50%);
+}
+
+.contact-button:hover {
+    background-color: #19d652; /* Escurece um pouco no hover */
+}
+
+.contact-text {
+    width: 100%;
+    padding: 0.8rem;
+    outline: none;
+    border: 2px solid #06a235;
+    font-size: .938rem;
+    margin-bottom: 1rem; /* Reduzido para melhor espaçamento */
+    border-radius: .5rem;
+    box-sizing: border-box; /* Garante que o padding não aumente o tamanho total */
+}
+
+@media (max-width: 768px) {
+    .contact-inputs {
+        grid-template-columns: 1fr; /* Alinha os inputs em coluna em telas menores */
+    }
 }
 
 @media (max-width: 768px) {
