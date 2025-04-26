@@ -7,7 +7,7 @@
 <br>
  
 
- 🔗Acesse o site :  https://antonio-jdev.github.io/ONG-fam-lia_solid-ria-HOW-5/#objetivos
+ 🔗Acesse o site : https://antonio-jdev.github.io/ONG-fam-lia_solid-ria-HOW-5/
 
 [<img src="./imagens/gif-mevam-social.gif" alt="gif da página do site.">]
 
