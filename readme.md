@@ -1,18 +1,27 @@
-# Site da Ong Família solidária.
+# 🌐Site Mevam Solidária.
  
- Projeto baseado em uma ONG onde o trabalho é doar marmitas para pessoas em estado de necessidade financeira. <br><br>
- Este é um protótipo para a entrega da parte-1.
+ 🎯Projeto baseado no site da Mevam onde presa serviços solidários.
+ 
+ 📌O nosso projeto foi feito pensado na divulgação do serviço de forma clara explicativa e objetiva. <br><br>
+📌O intuito é doar refeições para o público com fé, boa vontade, dedicação e com auxílio de doações de voluntários, visando desenpenhar um papel pra ajudar a sociedade. 
+<br>
+ 
 
-### Acesse o site :  https://antonio-jdev.github.io/ONG-fam-lia_solid-ria-HOW-5/#objetivos
+ 🔗Acesse o site :  https://antonio-jdev.github.io/ONG-fam-lia_solid-ria-HOW-5/#objetivos
 
-[<img src="./imagens/gif-mevam.gif" alt="gif da página do site.">]
+[<img src="./imagens/gif-mevam-social.gif" alt="gif da página do site.">]
+
+
+✅Com um design moderno responsivo, e intuitivo.
+✅Tecnologias utilizadas : 
+   - HTML, CSS, BOOTSTRAP;
 
 ## Disciplina Hands on Work-V do curso Análises e densenvolvimento de sistemas.
-### Projeto elaborado pelos alunos :
+### 👨🏻‍💻Projeto elaborado pelos alunos :
 
- - Antonio-jdev [Perfil do github].
- - NycolasMatiasMV [Perfil do github]
- - Eldalier [Perfil do github]
- - wNINJAw [Perfil do github] 
- - Samuka-0 [Perfil do github] 
- - AmigoInocente [Perfil do github] 
+ -     Antonio-jdev [Perfil do github]
+ -     NycolasMatiasMV [Perfil do github]
+ -     Eldalier [Perfil do github]
+ -     wNINJAw [Perfil do github] 
+ -     Samuka-0 [Perfil do github] 
+ -     AmigoInocente [Perfil do github] 

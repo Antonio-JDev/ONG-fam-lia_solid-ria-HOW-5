@@ -4,119 +4,289 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mevam Social</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Mevam Social - Restaurante Comunitário (Bootstrap)</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <style>
+        /* Estilos customizados adicionais, se necessário */
+        body {
+            font-family: 'Poppins', sans-serif; /* Mantém a fonte Poppins */
+            padding-top: 70px; /* Ajuste para navbar fixa no topo */
+        }
+        .hero-section {
+            /* Exemplo de como adicionar uma imagem de fundo se desejar */
+            /* background: url('sua-imagem-de-fundo.jpg') no-repeat center center; */
+            /* background-size: cover; */
+            background-color: #f8f9fa; /* Cor de fundo suave */
+            color: #333; /* Cor de texto para contraste */
+            padding: 6rem 0; /* Mais espaçamento vertical */
+        }
+
+        .navbar-brand img {
+             max-height: 40px; /* Ajusta altura do logo na navbar */
+             width: auto;
+        }
+        .carousel-item img {
+            max-height: 400px; /* Limita a altura das imagens do carrossel */
+            object-fit: cover; /* Garante que a imagem cubra a área sem distorcer */
+            margin: auto; /* Centraliza a imagem se ela for menor que a largura */
+        }
+        .footer {
+            background-color: #343a40; /* Fundo escuro para o rodapé */
+            color: #f8f9fa; /* Texto claro no rodapé */
+        }
+        .footer img {
+            max-height: 50px; /* Ajusta altura do logo no rodapé */
+            width: auto;
+        }
+        /* Estilo para o botão de voltar ao topo */
+        .back-to-top {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            display: none; /* Começa escondido */
+            z-index: 1000;
+        }
+    </style>
 </head>
 
 <body>
     <header>
-        <nav>
-              <a class="logo" href="#" id="comeco"><img src="https://static.wixstatic.com/media/f6ca36_31cf741abfc745b9b1883d3eb2c6a4da~mv2.png/v1/fill/w_165,h_162,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/logo-Restaurante-Comunitario-BRANCA.png" alt="logo-Restaurante-Comunitario-BRANCA.png" width="165" height="162" srcset="https://static.wixstatic.com/media/f6ca36_31cf741abfc745b9b1883d3eb2c6a4da~mv2.png/v1/fill/w_165,h_162,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/logo-Restaurante-Comunitario-BRANCA.png 1x, https://static.wixstatic.com/media/f6ca36_31cf741abfc745b9b1883d3eb2c6a4da~mv2.png/v1/fill/w_330,h_324,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/logo-Restaurante-Comunitario-BRANCA.png 2x" fetchpriority="high" style="width: 50px; height: 50px;"></a>
-              <ul class="nav-list">
-                    <li><a href="#inicio">Início</a></li>
-                    <li><a href="#sobre">Sobre</a></li>
-                    <li><a href="#main-content">Serviços</a></li>
-                    <li><a href="#contato">Contato</a></li>
-                </ul>
-            </nav>
-        </header>
-        <div class="inicio" id="inicio">
-           <div class="image-container">
-           </div>
-           <h1>Mevam Social - Restaurante comunitário</h1>
-           <p>Estamos aqui para auxiliar a comunidade da melhor forma,sendo eficaz e entregando experiencias
-           deliciosas!</p>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top shadow-sm">
+            <div class="container">
+                <a class="navbar-brand" href="#inicio">
+                    <img src="https://static.wixstatic.com/media/f6ca36_31cf741abfc745b9b1883d3eb2c6a4da~mv2.png/v1/fill/w_165,h_162,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/logo-Restaurante-Comunitario-BRANCA.png" alt="Logo Mevam Social" fetchpriority="high">
+                    Mevam Social
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#inicio">Início</a>
+                        </li>
+                        <!-- <li class="nav-item">
+                            <a class="nav-link" href="#sobre">Sobre</a>
+                        </li> -->
+                        <li class="nav-item">
+                            <a class="nav-link" href="servicos.html">Serviços</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#como-ajudar">Como Ajudar</a>
+                        </li>
+                         <li class="nav-item">
+                            <a class="nav-link" href="./dashboard.html">Dashboard</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <section id="inicio" class="hero-section text-center">
+        <div class="container">
+             <h1 class="display-4 fw-bold">Mevam Social</h1>
+             <h2 class="mb-4">Restaurante Comunitário</h2>
+            <p class="lead col-lg-8 mx-auto">
+                Estamos aqui para auxiliar a comunidade da melhor forma, sendo eficaz e entregando experiências deliciosas!
+            </p>
+            <a href="#sobre" class="btn btn-primary btn-lg mt-3">Saiba Mais</a>
         </div>
-    <section id="sobre">
-        <h2> Sobre Nós.</h2>
-        <p>
-            O restaurante comunitário é uma organização sem fins lucrativos dedicada a combater a fome e promover a
-            segurança alimentar em nossa comunidade. Início em 2025, temos trabalhado incansavelmente para fornecer
-            refeições nutritivas e saborosas para aqueles que mais precisam. <br><br>
-    
-        <h2>Nossos Objetivos:</h2>
-        <p>
-            Nosso objetivo principal é combater a fome e a insegurança alimentar em nossa comunidade. Através da
-            distribuição de marmitas nutritivas e saborosas, buscamos levar esperança e dignidade para famílias e
-            indivíduos em situação de vulnerabilidade.
-        </p>
-        <ul>
-            <li>Garantir o acesso à alimentação básica para quem mais precisa.</li>
-            <li>Promover a segurança alimentar e nutricional na comunidade.</li>
-            <li>Reduzir o desperdício de alimentos, transformando excedentes em refeições.</li>
-            <li>Fortalecer os laços comunitários e o senso de solidariedade.</li>
-        </ul>
     </section>
-    <main class="main-content" id="main-content">
-        <h2>Nossas Marmitas:</h2>
-        <p>
-            Preparamos nossas marmitas com muito carinho e atenção, utilizando ingredientes frescos e nutritivos.
-            Confira algumas fotos:
-        </p>
-        <div class="galeria">
-            <img src="./imagens/edit-5-marmita.png" alt="Marmita com arroz, feijão, frango e salada">
-            <img src="./imagens/pessoas-na-cozinha.avif" alt="Marmita com macarrão, carne moída e molho">
-            <img src="./imagens/editada-marmita-3.jpg" alt="Marmita com macarrão, carne moída e molho">
-        </div">
-        <div  id="motivacao" class="motivacao">
-            
-            <h2>O Que Nos Motiva?</h2>
-            <p>
-                Acreditamos que a comida é um direito humano fundamental. A fome não espera, e a necessidade de apoio é
-                urgente. Nosso trabalho é movido pela compaixão e pelo desejo de construir um futuro onde todos tenham
-                acesso a uma refeição digna.
-            </p>
-            <p>
-                Cada marmita que entregamos representa um ato de amor e cuidado, um lembrete de que ninguém está sozinho.
-                Ver a alegria e o alívio nos rostos daqueles que ajudamos nos inspira a seguir em frente, dia após dia.
-            </p>
-            <p>
-                Junte-se a nós nessa missão! Sua ajuda é fundamental para que possamos continuar fazendo a diferença na
-                vida de tantas pessoas.
+
+    <section id="sobre" class="py-5">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <h2 class="display-5 mb-4">Sobre Nós</h2>
+                    <p>
+                        O restaurante comunitário é uma organização sem fins lucrativos dedicada a combater a fome e promover a segurança alimentar em nossa comunidade. Desde o início em 2025, temos trabalhado incansavelmente para fornecer refeições nutritivas e saborosas para aqueles que mais precisam.
+                    </p>
+                </div>
+                 <div class="col-lg-6">
+                     <h3 class="mt-4 mt-lg-0">Nossos Objetivos:</h3>
+                      <ul class="list-group list-group-flush">
+                        <li class="list-group-item"><i class="bi bi-check-circle-fill text-success me-2"></i>Garantir o acesso à alimentação básica para quem mais precisa.</li>
+                        <li class="list-group-item"><i class="bi bi-check-circle-fill text-success me-2"></i>Promover a segurança alimentar e nutricional na comunidade.</li>
+                        <li class="list-group-item"><i class="bi bi-check-circle-fill text-success me-2"></i>Reduzir o desperdício de alimentos, transformando excedentes em refeições.</li>
+                        <li class="list-group-item"><i class="bi bi-check-circle-fill text-success me-2"></i>Fortalecer os laços comunitários e o senso de solidariedade.</li>
+                      </ul>
+                 </div>
+            </div>
+        </div>
+    </section>
+
+
+            <div id="motivacao" class="mt-5 pt-5 text-center">
+                <h2 class="display-5 mb-4">O Que Nos Motiva?</h2>
+                 <div class="row justify-content-center">
+                     <div class="col-lg-8">
+                        <p class="lead">
+                            Acreditamos que a comida é um direito humano fundamental. A fome não espera, e a necessidade de apoio é urgente. Nosso trabalho é movido pela compaixão e pelo desejo de construir um futuro onde todos tenham acesso a uma refeição digna.
+                        </p>
+                        <p>
+                            Cada marmita que entregamos representa um ato de amor e cuidado, um lembrete de que ninguém está sozinho. Ver a alegria e o alívio nos rostos daqueles que ajudamos nos inspira a seguir em frente, dia após dia.
+                        </p>
+                         <p class="fw-bold">
+                            Junte-se a nós nessa missão! Sua ajuda é fundamental para que possamos continuar fazendo a diferença na vida de tantas pessoas.
+                        </p>
+                    </div>
+                 </div>
+            </div>
         </div>
     </main>
-    
-    <article id="como-ajudar">
-        <h2>Como Você Pode Ajudar?</h2>
-        <p>
-            <strong>Sua contribuição faz a diferença na vida de muitas pessoas.</strong> Existem diversas maneiras de
-            colaborar com o nosso trabalho:
-        </p>
-        <ul>
-            <li><strong>Doação de valores:</strong> Qualquer quantia é bem-vinda e será utilizada para a compra de
-                ingredientes e utensílios.</li>
-            <li><strong>Doação de insumos:</strong> Alimentos não perecíveis, embalagens e materiais de higiene são
-                sempre necessários.</li>
-            <li><strong>Trabalho voluntário:</strong> Ajude na preparação e distribuição das marmitas, ou compartilhe
-                seus talentos em outras áreas.</li>
-            <li><strong>Divulgação:</strong> Compartilhe nosso trabalho nas redes sociais e ajude a espalhar a mensagem
-                de solidariedade.</li>
-        </ul>
-        <p>
-            Entre em contato conosco para saber mais sobre como você pode se juntar a essa corrente do bem!
-        </p>
-    </article>
-    <div>
-    <a href="#comeco" class="back">Voltar ao Início</a>
-   </div>
-        <form action="" class="contact-form">
-            <div class="contact-inputs">
-                <input type="text" placeholder="Name" class="contact-input">
-                <input type="email" placeholder="email" class="contact-input">           
+
+    <section id="como-ajudar" class="py-5">
+        <div class="container">
+            <h2 class="text-center display-5 mb-5">Como Você Pode Ajudar?</h2>
+             <div class="row g-4">
+                 <div class="col-md-6 col-lg-3">
+                     <div class="card h-100 text-center shadow-sm">
+                         <div class="card-body">
+                             <h5 class="card-title">Doação de Valores</h5>
+                             <p class="card-text">Qualquer quantia é bem-vinda e será utilizada para a compra de ingredientes e utensílios.</p>
+                             <a href="./cadastro.html" class="btn btn-outline-primary">Doe Agora</a>
+                         </div>
+                    </div>
+                </div>
+                 <div class="col-md-6 col-lg-3">
+                     <div class="card h-100 text-center shadow-sm">
+                         <div class="card-body">
+                             <h5 class="card-title">Doação de Insumos</h5>
+                             <p class="card-text">Alimentos não perecíveis, embalagens e materiais de higiene são sempre necessários.</p>
+                             <a href="./cadastro.html" class="btn btn-outline-primary">Saiba Mais</a>
+                         </div>
+                    </div>
+                </div>
+                 <div class="col-md-6 col-lg-3">
+                     <div class="card h-100 text-center shadow-sm">
+                         <div class="card-body">
+                             <h5 class="card-title">Trabalho Voluntário</h5>
+                             <p class="card-text">Ajude na preparação e distribuição, ou compartilhe seus talentos em outras áreas.</p>
+                              <a href="./cadastro.html" class="btn btn-outline-primary">Seja Voluntário</a>
+                         </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                     <div class="card h-100 text-center shadow-sm">
+                         <div class="card-body">
+                             <h5 class="card-title">Divulgação</h5>
+                             <p class="card-text">Compartilhe nosso trabalho nas redes sociais e ajude a espalhar a solidariedade.</p>
+                             <button class="btn btn-outline-primary">Compartilhar</button> </div>
+                    </div>
+                </div>
             </div>
-            <textarea name="Texto" placeholder="Digite sua mensagem" id="contato" cols="50" rows="7" class="contact-text"></textarea>
+            <p class="text-center mt-5 lead">
+                Entre em contato conosco para saber mais sobre como você pode se juntar a essa corrente do bem!
+            </p>
+        </div>
+    </section>
 
-            <input type="submit" value="Enviar" class="contact-button">  
-        </form>
-    <div class="footer">
-        <p>&copy; 2025 Mevam Solidário - Restaurante comunitário . Todos os direitos reservados.</p>
-       
-        <img src="https://static.wixstatic.com/media/f6ca36_31cf741abfc745b9b1883d3eb2c6a4da~mv2.png/v1/fill/w_165,h_162,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/logo-Restaurante-Comunitario-BRANCA.png" alt="logo-Restaurante-Comunitario-BRANCA.png" width="165" height="162" srcset="https://static.wixstatic.com/media/f6ca36_31cf741abfc745b9b1883d3eb2c6a4da~mv2.png/v1/fill/w_165,h_162,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/logo-Restaurante-Comunitario-BRANCA.png 1x, https://static.wixstatic.com/media/f6ca36_31cf741abfc745b9b1883d3eb2c6a4da~mv2.png/v1/fill/w_330,h_324,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/logo-Restaurante-Comunitario-BRANCA.png 2x" fetchpriority="high" style="width: 115px; height: 102px; ">
+    <!-- <section id="contato" class="py-5 bg-light">
+         <div class="container">
+             <h2 class="text-center display-5 mb-4">Entre em Contato</h2>
+             <div class="row justify-content-center">
+                 <div class="col-lg-6">
+                     <form action="#" class="contact-form"> <div class="mb-3">
+                             <label for="contactName" class="form-label">Nome</label>
+                             <input type="text" class="form-control" id="contactName" placeholder="Seu nome completo" required>
+                         </div>
+                          <div class="mb-3">
+                             <label for="contactEmail" class="form-label">Email</label>
+                             <input type="email" class="form-control" id="contactEmail" placeholder="seuemail@exemplo.com" required>
+                         </div>
+                         <div class="mb-3">
+                             <label for="contactMessage" class="form-label">Mensagem</label>
+                             <textarea class="form-control" id="contactMessage" rows="5" placeholder="Digite sua mensagem aqui..." required></textarea>
+                         </div>
+                         <div class="text-center">
+                            <button type="submit" class="btn btn-primary btn-lg">Enviar Mensagem</button>
+                         </div>
+                     </form>
+                 </div>
+             </div>
+         </div>
+     </section> -->
+
+     <a href="#inicio" class="btn btn-dark back-to-top" id="backToTopButton" title="Voltar ao Início">
+         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-up-short" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M8 12a.5.5 0 0 0 .5-.5V5.707l2.146 2.147a.5.5 0 0 0 .708-.708l-3-3a.5.5 0 0 0-.708 0l-3 3a.5.5 0 1 0 .708.708L7.5 5.707V11.5a.5.5 0 0 0 .5.5"/>
+          </svg>
+     </a>
+
+    <footer class="footer py-4 mt-auto">
+        <div class="container d-flex flex-column flex-sm-row justify-content-between align-items-center">
+            <p class="mb-3 mb-sm-0 text-center text-sm-start">&copy; 2025 Mevam Social - Restaurante Comunitário. Todos os direitos reservados.</p>
+            <a href="#inicio">
+                 <img src="https://static.wixstatic.com/media/f6ca36_31cf741abfc745b9b1883d3eb2c6a4da~mv2.png/v1/fill/w_165,h_162,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/logo-Restaurante-Comunitario-BRANCA.png" alt="Logo Mevam Social Rodapé">
+            </a>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+    <script>
+        // Scroll Suave para links da navbar
+        document.querySelectorAll('.navbar-nav a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href');
+                const targetElement = document.querySelector(targetId);
+                if(targetElement) {
+                    // Calcula o offset da navbar fixa
+                    const navbarHeight = document.querySelector('.navbar.fixed-top')?.offsetHeight || 0;
+                    const elementPosition = targetElement.getBoundingClientRect().top;
+                    const offsetPosition = elementPosition + window.pageYOffset - navbarHeight;
+
+                    window.scrollTo({
+                        top: offsetPosition,
+                        behavior: "smooth"
+                    });
+
+                    // Opcional: fecha o menu hamburguer após o clique em mobile
+                    const navbarToggler = document.querySelector('.navbar-toggler');
+                    const navbarCollapse = document.querySelector('.navbar-collapse');
+                    if (navbarToggler && !navbarToggler.classList.contains('collapsed')) {
+                        bootstrap.Collapse.getInstance(navbarCollapse)?.hide();
+                    }
+                }
+            });
+        });
+
+        // Botão Voltar ao Topo
+        const backToTopButton = document.getElementById("backToTopButton");
+
+        window.onscroll = function() {scrollFunction()};
+
+        function scrollFunction() {
+          if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+            backToTopButton.style.display = "block";
+          } else {
+            backToTopButton.style.display = "none";
+          }
+        }
+
+        // Scroll suave para o botão voltar ao topo
+        backToTopButton.addEventListener('click', function(e) {
+            e.preventDefault();
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+
+        // Ativa o link da navbar correspondente à seção visível (Scrollspy)
+        const scrollSpy = new bootstrap.ScrollSpy(document.body, {
+            target: '#navbarNav', // O ID do container da sua navegação
+            offset: 100 // Ajuste o offset conforme a altura da sua navbar fixa + algum espaço extra
+        });
+
+    </script>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
 </body>
-
 </html>
