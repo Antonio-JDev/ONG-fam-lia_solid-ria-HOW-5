@@ -9,7 +9,7 @@
 
  🔗Acesse o site : https://antonio-jdev.github.io/ONG-fam-lia_solid-ria-HOW-5/
 
-[<img src="./imagens/gif-mevam-social.gif" alt="gif da página do site.">]
+[<img src="./imagens/Mevam-social.gif" alt="gif da página do site.">]
 
 
 ✅Com um design moderno responsivo, e intuitivo.
